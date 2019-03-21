@@ -1,0 +1,169 @@
+#!/bin/bash
+clear
+a='\033[31;1m'
+b='\033[32;1m'
+c='\033[33;1m'
+d='\033[34;1m'
+e='\033[35;1m'
+f='\033[36;1m'
+g='\033[37;1m'
+
+trap ctrl_c INT
+ctrl_c(){
+clear
+echo -e "$a[$g!$a]$g CTRL+C Terdeteksi"
+sleep 0.5
+echo -e "$a[$g!$a]$g Password untuk keluar"
+echo -e "$a[$g!$a]$g Jika salah akan error"
+read -p "Password : " pw
+if [ $pw = ShaDoW ]
+then
+sleep 1
+echo -e "$b[$g+$b]$g Terima kasih telah menggunakan tools SBI-GitUP"
+exit
+else
+echo -e "$a[$g!$a]$g Maaf password salah"
+sleep 3
+while [ true ]
+do
+echo -e "\033[41;1mShaDoW BlooD InDoNeSiA || Error : 404 Not found || BOOM !!"
+sleep 0.000000000000000000000000000000000000000000000000000000000000000000001
+echo -e "\033[42;1mWe Always Together Because of Family || Error :404 Not found"
+sleep 0.000000000000000000000000000000000000000000000000000000000000000000001
+done
+fi
+}
+
+echo -e "$a Author :$g <[SBI_01]"
+echo -e "$a Tools  :$g Github Upload"
+echo -e "$a Team   :$g ShaDoW BlooD InDoNeSiA"
+sleep 0.7
+echo -e "                       ___-----___..      ...
+              /\::   _/           \_::   /\:::
+             /  \::_/               \_::/  \:::
+            /    \/                   \/    \:::
+            |      $a  __           __       $g |:::
+             \      $a/  \         /  \    $g  /:::
+              \_    $a\__/         \__/  $g  _/:::
+                |                       |:::
+                \_                     _/:::
+                  \_                 _/:::
+                    \_             _/:::
+                      \___________/:::$a"
+cat mod
+sleep 0.5
+echo ""
+echo -e " $a[\033[37;1m01$a]$g Mulai"
+echo -e " $a[\033[37;1m02$a]$g Help"
+echo -e " $a[\033[37;1m03$a]$g Info Tools"
+echo -e " $a[\033[37;1m04$a]$g Keluar"
+read -p " [Pilihan]=>> " pilihan
+
+if [ $pilihan = 01 ] || [ $pilihan = 1 ]
+then
+read -p " Alamat Folder   : " folder
+read -p " Link Repository : " repo
+bash get
+mv BACA.txt "$folfer" &> /dev/null
+cd "$folder"
+echo -e " $b[$g+$b]$g MEMULAI"
+git init &> /dev/null
+git add *
+git commit -m "OK" &> /dev/null
+git remote add origin $repo
+git push origin master
+echo -e " $b[$g+$b]$g SELESAI"
+echo -e " $b[$g+$b]$g Selamat file/folder telah diupload"
+echo -e " $b[$g+$b]$g Silahkan cek di$a $repo"
+echo -e " $a[$g-$a]$g Jika belum diupload berarti alamat Folder/link"
+echo -e "     Repository ada yang salah"
+sleep 1
+echo ''
+echo -e " Keluar??"
+read -p " [Y/N]=>> " out
+fi
+
+if [ $pilihan = 02 ] || [ $pilihan = 2 ]
+then
+sleep 0.5
+echo -e " $a[$g!$a]$g Wajib memiliki akun GitHub"
+echo -e " $a[$g!$a]$g Buat Repository baru di GitHub"
+echo -e " $a[$g!$a]$g Masukkan file/folder yang ingin diupload"
+echo -e "     dalam satu folder yang sama"
+echo -e "$a     Enter$g untuk lanjut"
+read enter
+sleep 0.5
+echo -e " $a-$g>$a Repositori$g adalah link untuk upload file/folder"
+echo -e " $a   Contoh :$g https://github.com/SBI-Team/SBI-GitUP.git"
+echo -e "$a    Enter$g untuk lanjut"
+read enter
+echo -e " $a-$g>$a Alamat file/folder$g adalah alamat penyimpanan"
+echo -e "    file/folder yang ingin diupload"
+echo -e " $a   Contoh :$g /sdcard/SBI-Tools/SBI-GitUP"
+echo -e "$a    Enter$g untuk lanjut"
+read enter
+echo -e " $a-$g>$a Akun GitHub$g adalah akun yang terbuat di GitHub"
+echo -e "    menggunakan Email, Username, dan Password"
+echo -e "$a    Enter$g untuk lanjut"
+read enter
+echo -e " $a-$g>$a Email GitHub$g adalah email yang digunakan"
+echo -e "    untuk log'in di GitHub"
+echo -e " $a   Contoh :$g shadowblood@gmail.com"
+echo -e "$a    Enter$g untuk lanjut"
+read enter
+echo -e " $a-$g>$a Username GitHub$g adalah nama yang digunakan"
+echo -e "    untuk log'in di GitHub"
+echo -e " $a   Contoh :$g SBI-Team"
+echo -e "$a    Enter$g untuk lanjut"
+read enter
+echo -e " $a-$g>$a Password GitHub$g adalah password yang digunakan"
+echo -e "    untuk log'in di GitHub"
+echo -e " $a   Contoh :$g sbipsswd1"
+echo -e "$a    Enter$g untuk lanjut"
+read enter
+echo -e " Terima kasih telah membaca Help"
+sleep 5
+bash index
+fi
+
+if [ $pilihan = 03 ] || [ $pilihan = 3 ]
+then
+echo -e "$a Author :$g <[SBI_01]"
+sleep 0.5
+echo -e "$a Name   :$g SBI-GitUP"
+sleep 0.5
+echo -e "$a Team   :$g ShaDoW BlooD InDoNeSiA"
+sleep 0.5
+echo -e "$a GitHub :$g https://github.com/SBI-Team/SBI-GitUP"
+sleep 0.5
+echo -e "$a Date   :$g 21 Maret 2019"
+sleep 0.5
+echo -e "$a Version:$g 1.0"
+sleep 0.5
+echo -e "$a Kegunaan :$g Upload file/folder ke GitHub"
+sleep 0.5
+echo -e " Terima kasih telah membaca Info Tools"
+echo -e " Silahkan tekan$a Enter"
+read enter
+bash index
+fi
+
+if [ $pilihan = 04 ] || [ $pilihan = 4 ]
+then
+echo -e " Yakin ingin$a keluar$g??"
+read -p " [Y/N]=>> " out
+echo -e " Terima kasih telah menggunakan tools SBI-GitUP"
+sleep 3
+fi
+
+if [ $out = Y ] || [ $out = y ]
+then
+exit
+fi
+
+if [ $out = N ] || [ $out = n ]
+then
+echo -e " Selamat datang kembali"
+sleep 2
+bash index
+fi
