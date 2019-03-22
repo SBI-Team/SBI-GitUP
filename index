@@ -128,17 +128,17 @@ fi
 
 if [ $pilihan = 03 ] || [ $pilihan = 3 ]
 then
-echo -e "$a Author :$g <[SBI_01]"
+echo -e "$a Author   :$g <[SBI_01]"
 sleep 0.5
-echo -e "$a Name   :$g SBI-GitUP"
+echo -e "$a Name     :$g SBI-GitUP"
 sleep 0.5
-echo -e "$a Team   :$g ShaDoW BlooD InDoNeSiA"
+echo -e "$a Team     :$g ShaDoW BlooD InDoNeSiA"
 sleep 0.5
-echo -e "$a GitHub :$g https://github.com/SBI-Team/SBI-GitUP"
+echo -e "$a GitHub   :$g https://github.com/SBI-Team/SBI-GitUP"
 sleep 0.5
-echo -e "$a Date   :$g 21 Maret 2019"
+echo -e "$a Date     :$g 21 Maret 2019"
 sleep 0.5
-echo -e "$a Version:$g 1.0"
+echo -e "$a Version  :$g 1.0"
 sleep 0.5
 echo -e "$a Kegunaan :$g Upload file/folder ke GitHub"
 sleep 0.5
