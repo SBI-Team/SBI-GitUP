@@ -61,12 +61,16 @@ read -p " [Pilihan]=>> " pilihan
 
 if [ $pilihan = 01 ] || [ $pilihan = 1 ]
 then
+read -p " Email GitHub : " email
+read -p " Username GitHub : " name
 read -p " Alamat Folder   : " folder
 read -p " Link Repository : " repo
 bash get
 mv BACA.txt "$folder" &> /dev/null
 cd "$folder"
 echo -e " $b[$g+$b]$g MEMULAI"
+git config --global user.email "$email"
+git config --global user.name "$name"
 git init &> /dev/null
 git add *
 git commit -m "OK" &> /dev/null
