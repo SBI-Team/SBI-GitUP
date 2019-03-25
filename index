@@ -64,7 +64,7 @@ then
 read -p " Alamat Folder   : " folder
 read -p " Link Repository : " repo
 bash get
-mv BACA.txt "$folfer" &> /dev/null
+mv BACA.txt "$folder" &> /dev/null
 cd "$folder"
 echo -e " $b[$g+$b]$g MEMULAI"
 git init &> /dev/null
