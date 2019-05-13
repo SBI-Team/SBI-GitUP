@@ -34,7 +34,7 @@ done
 fi
 }
 
-echo -e "$a Author :$g <[SBI_01]"
+echo -e "$a Author :$g ᗛ[SBI_B4n9Z4tt3r5]"
 echo -e "$a Tools  :$g Github Upload"
 echo -e "$a Team   :$g ShaDoW BlooD InDoNeSiA"
 sleep 0.7
@@ -132,7 +132,7 @@ fi
 
 if [ $pilihan = 03 ] || [ $pilihan = 3 ]
 then
-echo -e "$a Author   :$g <[SBI_01]"
+echo -e "$a Author   :$g ᗛ[SBI_B4n9Z4tt3r5]"
 sleep 0.5
 echo -e "$a Name     :$g SBI-GitUP"
 sleep 0.5
